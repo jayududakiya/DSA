@@ -1,14 +1,25 @@
 #include<stdio.h>
 
+#define n 5
+
+
 int main ()
 {
-    int A[5]={10,20,30,40,50},i;
+    int A[n],i,Temp;
 
-    for(i=0;i<4;i++)
+    for (i=0;i<n;i++)
+    {
+        printf("\n Enter A : ");
+        scanf("%d",&A[i]);
+    }
+
+    Temp=A[0];      
+
+    for(i=0;i<n;i++)
     {
         printf("\n [%d] : %d ",i,A[i+1]);
-    }    
-        printf("\n [%d] : %d ",i,A[i-4]);
+        Temp;
+    }   
 
     
 }
