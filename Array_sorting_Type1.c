@@ -13,12 +13,11 @@ int main ()
         scanf("%d",&A[i]);
     }
 
-    Temp=A[0];      
 
     for(i=0;i<n;i++)
     {
+        Temp=A[0];      // now A[0] is Empty 
         printf("\n [%d] : %d ",i,A[i+1]);
-        Temp;
     }   
 
     
