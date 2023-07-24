@@ -27,7 +27,6 @@ int delete()
 {
     if(top<0)
        printf("\t Array is Emtpy....\n ");
-
     else
     {
         top--;
@@ -38,12 +37,12 @@ int main()
 { 
 
 int ch,m,j;
+
 Try:
 printf("\n \t \n Enter [1] To Insert");
 printf("\t \n Enter [2] To Delete");
 printf("\t \n Enter [3] To Display\n");
 printf("\t \n [0] To Exit \n");
-
 
 
 do
@@ -59,23 +58,15 @@ switch (ch)
       printf("Enter Value : ");
       scanf("%d",&m);
       insert(m);
-      // goto Try;
     break;
 
    case 2:
-    printf("Enter Delete Array number : ");
-    scanf("%d",&m);
-    for(j=0;j<m;j++)
-    {
       delete();
-    }
-      // goto Try;
     break;
 
    case 3:
     printf("\t Array is : ");
       Display();
-      // goto Try;
     break;
    
     case 0: break;
