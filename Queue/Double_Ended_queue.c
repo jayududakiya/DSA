@@ -21,7 +21,7 @@ int Display()
 
 // ================= LIFO ========================
 
-int InsertVal(int Val)
+int InsertVal(int Val) // to first insert element 
 {
     
     if(F<0)
@@ -42,7 +42,7 @@ int InsertVal(int Val)
     }
 }
 
-int DeleteVal()
+int DeleteVal() // to last delete 
 {
     if (R < 0)
     {
@@ -61,7 +61,7 @@ int DeleteVal()
 
 // ================= FIFO ========================
 
-int F_insertVal(int Val)
+int F_insertVal(int Val)  // to last insert element 
 {
     if (R >= n - 1)
     {
@@ -81,7 +81,7 @@ int F_insertVal(int Val)
     }
 }
 
-int F_deleteVal()
+int F_deleteVal()  // to first delete 
 {
     if (F < 0)
     {
