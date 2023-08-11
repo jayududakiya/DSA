@@ -57,6 +57,19 @@ void delete()
     struct node *ptr = head;
     struct node *p;
 
+    if(head==NULL)
+    {
+        printf("list is already empty .... \n ");
+        return;
+    }
+
+    else if(ptr->next== head)
+    {
+        head = NULL ;
+        free(ptr);
+        printf("Now link is already empty......\n ");
+    }
+
     while (ptr->next != head)
     {
         p = ptr;
