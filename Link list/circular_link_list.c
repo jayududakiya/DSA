@@ -120,14 +120,15 @@ void first_delete()
 {
 
     struct node *ptr = head;
+    struct node *p = head;
 
     while (ptr->next != head)
     {
         ptr = ptr->next;
     }
-        ptr->next = head->next;  
-        free(head);  
-        head = ptr->next;
+        ptr->next = p->next;  
+        head = p->next;
+        free(p);  
     return;
 }
 
